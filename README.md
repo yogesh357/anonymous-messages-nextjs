@@ -27,4 +27,4 @@ A web app built with **Next.js 15**, **Tailwind CSS**, and **Nodemailer** that a
 - **Email:** Nodemailer (Gmail SMTP)
 
  
->>>>>>> 58f62728115109202374d0e092b3a906245681cd
+ 
