@@ -26,8 +26,4 @@ A web app built with **Next.js 15**, **Tailwind CSS**, and **Nodemailer** that a
 - **Auth:** Custom OTP verification
 - **Email:** Nodemailer (Gmail SMTP)
 
----
  
-```bash
-git clone https://github.com/your-username/anonymous-message-app.git
-cd anonymous-message-app
