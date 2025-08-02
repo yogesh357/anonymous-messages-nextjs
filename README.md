@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -34,3 +35,34 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+=======
+# 
+# 🕵️ Anonymous Message Nextjs
+
+A web app built with **Next.js 15**, **Tailwind CSS**, and **Nodemailer** that allows users to receive **anonymous messages** with a secure **OTP-based email verification** system.
+
+## ✨ Features
+
+- 🔐 OTP verification using **Nodemailer**
+- 💬 Receive **anonymous messages** through a public profile link
+- 🌐 Built with **Next.js App Router (v15)**
+- 🎨 Fully responsive UI with **Tailwind CSS**
+- 🔄 Realtime feedback and notifications using `sonner`
+- 🛡️ User data verification and validation using `zod`
+- 🔗 Public shareable profile URLs
+- 📁 MongoDB database with Mongoose models
+
+---
+ 
+
+## 🚀 Tech Stack
+
+- **Frontend:** Next.js 15 (App Router), Tailwind CSS
+- **Backend:** Node.js, Next.js API routes
+- **Database:** MongoDB with Mongoose
+- **Validation:** Zod + react-hook-form
+- **Auth:** Custom OTP verification
+- **Email:** Nodemailer (Gmail SMTP)
+
+ 
+>>>>>>> 58f62728115109202374d0e092b3a906245681cd
