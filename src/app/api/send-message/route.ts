@@ -1,7 +1,6 @@
 import UserModel from "@/model/User";
 import dbConnect from "@/lib/dbConnect";
-import { Message } from "@/model/User";
-import { use } from "react";
+import { Message } from "@/model/User"; 
 
 export async function POST(request: Request) {
     dbConnect()
