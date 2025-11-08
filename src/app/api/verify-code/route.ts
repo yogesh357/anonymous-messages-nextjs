@@ -69,7 +69,7 @@ export async function POST(request: Request) {
 
 }
 
-// Temporary debug route - add this to your API file
+// Temporary debug route  
 export async function GET() {
     await dbConnect();
     const allUsers = await UserModel.find({});

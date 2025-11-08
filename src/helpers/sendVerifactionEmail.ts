@@ -21,8 +21,7 @@
 //         console.log("Error sending verifaction email", emailError)
 //         return { success: false, message: 'Failed to send verification email' }
 //     }
-// } 
-
+// }
 
 /////////////
 
@@ -32,29 +31,31 @@ import { ApiResponse } from "@/types/ApiResponse";
 import { transporter } from "@/lib/nodeMailer";
 
 export async function sendVerificationEmail(
-    email: string,
-    username: string,
-    verifyCode: string
+  email: string,
+  username: string,
+  verifyCode: string
 ): Promise<ApiResponse> {
-    try {
-        transporter.sendMail({
-            from: "dhakane020@gmail.com",
-            to: email,
-            subject: "Verification Code",
-            text: `hello ${username}, your code is ${verifyCode}`,
-            
-        }, (err, info) => {
-            if (err) {
-                console.error("Email error:", err);
-            } else {
-                console.log("Email sent:", info.response);
-            }
-        });
+  try {
+    console.log("verifyCode::", verifyCode);
+    transporter.sendMail(
+      {
+        from: "dhakane020@gmail.com",
+        to: email,
+        subject: "Verification Code",
+        text: `hello ${username}, your code is ${verifyCode}`,
+      },
+      (err, info) => {
+        if (err) {
+          console.error("Email error:", err);
+        } else {
+          console.log("Email sent:", info.response);
+        }
+      }
+    );
 
-        return { success: true, message: 'Verification email send successfully' }
-
-    } catch (emailError) {
-        console.log("Error sending verifaction email", emailError)
-        return { success: false, message: 'Failed to send verification email' }
-    }
-} 
+    return { success: true, message: "Verification email send successfully" };
+  } catch (emailError) {
+    console.log("Error sending verifaction email", emailError);
+    return { success: false, message: "Failed to send verification email" };
+  }
+}

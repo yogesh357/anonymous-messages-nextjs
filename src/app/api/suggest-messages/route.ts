@@ -20,8 +20,7 @@ export async function POST(req: Request) {
             model: perplexity('sonar-pro'), // You can also use 'sonar' or other available models
             prompt
         }); 
-
-        console.log("ai responseeeeee",result)
+ 
         return result.toUIMessageStreamResponse();
 
     } catch (error) {
